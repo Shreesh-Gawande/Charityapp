@@ -5,7 +5,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className="flex justify-between items-center p-6 md:px-20  bg-#F8F6E4-200">
+        <div className="flex justify-between items-center p-6 md:px-20  bg-[#F8F6E4]">
           <Image src="" alt="logo" width={75} height={75} />
       
           <div className="flex gap-7 ">

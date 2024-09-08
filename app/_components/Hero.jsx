@@ -3,8 +3,8 @@ import React from 'react'
 
 function Hero() {
     return (
-        <div className="flex relative justify-evenly mt-20">
-          <div className="max-w-md "> 
+        <div className="flex relative justify-evenly mt-20 bg-[#F8F6E4] mx-auto max-w-[1024px] ">
+          <div className="max-w-md mr-4"> 
             <h1 className="text-5xl font-bold" style={{ fontFamily: "Times New Roman" }}>
               Empower Hope, Transform Lives
             </h1>
@@ -12,7 +12,7 @@ function Hero() {
               The essence of charity by conveying the idea of uplifting individuals and communities through the power of hope and positive change.
             </p>
           </div>
-          <div className="relative "> 
+          <div className="relative ml-4 "> 
             <Image 
               src="/image3.png" 
               alt="image" 
