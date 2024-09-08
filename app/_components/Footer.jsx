@@ -8,7 +8,7 @@ function Footer() {
     <div className='bg-[#399866] w-full max-w-[1300px] m-10 h-96 py-8 mx-auto rounded-3xl'>
         <div className='flex justify-evenly gap-8'>
             <div>
-                <Image src="" alt='logo' width={200} height={200}/>
+                <Image src="/logo2.png" alt='logo' width={200} height={200}/>
             </div>
             <div className='flex gap-16 mt-8 '>
                 <div className='flex flex-col gap-4'>
