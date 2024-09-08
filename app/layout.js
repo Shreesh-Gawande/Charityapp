@@ -4,6 +4,8 @@ import Header from "./_components/Header.jsx";
 import Hero from "./_components/Hero";
 import Section1 from "./_components/Section1";
 import Section2 from "./_components/Section2";
+import Section3 from "./_components/Section3";
+import Footer from "./_components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +33,8 @@ export default function RootLayout({ children }) {
         <Hero/>
         <Section1/>
         <Section2/>
+        <Section3/>
+        <Footer/>
         {children}
       </body>
     </html>
