@@ -3,12 +3,9 @@ import React from 'react';
 function Section3() {
   return (
     <div className='bg-white mt-32 pb-52'>
-      <div className='flex flex-col items-center justify-evenly w-full'>
-        <h1 className='text-4xl items-center font-bold mt-20' style={{ fontFamily: 'Arial' }}>
-          Making a difference for those
-        </h1>
-        <h1 className='text-4xl items-center font-bold' style={{ fontFamily: 'Arial' }}>
-          who face hardship
+       <div className='flex flex-col items-center justify-evenly w-full'>
+        <h1 className='text-4xl font-bold mt-20 text-center' style={{ fontFamily: 'Arial' }}>
+          Making a difference for those <br></br>who face hardship
         </h1>
       </div>
 

@@ -1,36 +1,48 @@
-"use client"
-import { useRouter } from 'next/router';
+"use client";
+
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Footer from '@/app/_components/Footer';
+import { useParams } from 'next/navigation';
+import Header from '@/app/_components/Header';
 
 const ProductDetail = () => {
-  const router = useRouter();
-  const { id } = router.query;
   const [product, setProduct] = useState(null);
-  const [isMounted, setIsMounted] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); 
+  const [error, setError] = useState(null); 
+  const { id } = useParams(); 
 
   useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-
-  useEffect(() => {
-    if (isMounted && id) {
+    if (id) {
       fetch(`https://dummyjson.com/products/${id}`)
-        .then(res => res.json())
-        .then(data => setProduct(data))
-        .catch(err => console.error('Error fetching product:', err));
+        .then(res => {
+          if (!res.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return res.json();
+        })
+        .then(data => {
+          setProduct(data);
+          setIsLoading(false);
+        })
+        .catch(err => {
+          console.error('Error fetching product:', err);
+          setError(err.message);
+          setIsLoading(false);
+        });
     }
-  }, [id, isMounted]);
+  }, [id]);
 
-  if (!isMounted || !product) return <div>Loading...</div>;
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!product) return <div>No product found</div>;
 
   return (
-    <div className='p-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg'>
+    <>
+    <Header/>
+    <div className='p-6 w-full max-w-[1300px] mx-auto bg-white shadow-lg rounded-lg'>
       <div className='flex flex-col items-center md:flex-row'>
-       
-        <Image src={product.thumbnail} alt={product.title} width={400} height={300} className='rounded-md' />
-
+        <Image src="/iphone.jpg" alt={product.title} width={400} height={300} className='rounded-md' />
         <div className='md:ml-8 mt-4 md:mt-0'>
           <h1 className='text-2xl font-bold text-gray-800'>{product.title}</h1>
           <p className='text-gray-600 mt-2'>{product.description}</p>
@@ -41,14 +53,15 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-
       
       <div className='mt-6'>
         <h2 className='text-xl font-semibold text-gray-800'>More Details:</h2>
         <p className='text-gray-600 mt-2'>Brand: {product.brand}</p>
         <p className='text-gray-600 mt-2'>Stock: {product.stock}</p>
       </div>
+      <Footer />
     </div>
+    </>
   );
 };
 
