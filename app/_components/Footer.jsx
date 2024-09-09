@@ -5,7 +5,7 @@ import { InstagramLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 
 function Footer() {
   return (
-    <div className='bg-[#399866] w-full max-w-[1300px] mx-auto my-10 py-8 px-4 rounded-3xl'>
+    <div className='bg-[#399866] w-full max-w-[1400px] mx-auto my-10 py-8 px-4 rounded-3xl'>
      
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         

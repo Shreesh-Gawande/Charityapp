@@ -4,15 +4,16 @@ import React from 'react'
 function Hero() {
     return (
         <div className="flex flex-col-reverse sm:flex-row relative justify-evenly mt-10 sm:mt-20 bg-[#F8F6E4] mx-auto max-w-[1024px] p-4">
-          
-          <div className="max-w-md mr-0 sm:mr-4"> 
-            <h1 className="text-3xl sm:text-5xl font-bold text-black" >
-              Empower Hope, Transform Lives
-            </h1>
-            <p className="mt-4 text-lg sm:text-xl text-black">
-              The essence of charity by conveying the idea of uplifting individuals and communities through the power of hope and positive change.
-            </p>
-          </div>
+          <div className="flex justify-center items-center p-4 sm:p-6 lg:p-12">
+      <div className="max-w-md w-full text-center">
+        <h1 className="text-3xl sm:text-5xl text-black font-bold">
+          Empower Hope, Transform Lives
+        </h1>
+        <p className="mt-4 text-lg sm:text-xl text-black">
+          The essence of charity by conveying the idea of uplifting individuals and communities through the power of hope and positive change.
+        </p>
+      </div>
+    </div>
           
           
           <div className="relative mb-6 sm:mb-0 ml-0 sm:ml-4"> 
