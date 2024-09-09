@@ -11,7 +11,7 @@ function Footer() {
         
        
         <div className='flex justify-center md:justify-start'>
-          <Image src="/logo2.png" alt='logo' width={200} height={200} />
+          <Image src="/logo2.png" alt='logo' width={200} height={150} />
         </div>
         
        

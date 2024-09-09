@@ -6,10 +6,10 @@ function Hero() {
         <div className="flex flex-col-reverse sm:flex-row relative justify-evenly mt-10 sm:mt-20 bg-[#F8F6E4] mx-auto max-w-[1024px] p-4">
           
           <div className="max-w-md mr-0 sm:mr-4"> 
-            <h1 className="text-3xl sm:text-5xl font-bold" style={{ fontFamily: "Times New Roman" }}>
+            <h1 className="text-3xl sm:text-5xl font-bold" >
               Empower Hope, Transform Lives
             </h1>
-            <p className="mt-4 text-lg sm:text-xl" style={{ fontFamily: "Times New Roman" }}>
+            <p className="mt-4 text-lg sm:text-xl">
               The essence of charity by conveying the idea of uplifting individuals and communities through the power of hope and positive change.
             </p>
           </div>
