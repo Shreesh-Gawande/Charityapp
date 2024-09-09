@@ -4,7 +4,7 @@ function Section3() {
   return (
     <div className='bg-white mt-32 pb-52'>
        <div className='flex flex-col items-center justify-evenly w-full'>
-        <h1 className='text-4xl font-bold mt-20 text-center' >
+        <h1 className='text-4xl font-bold mt-20 text-centertext-black' >
           Making a difference for those <br></br>who face hardship
         </h1>
       </div>
@@ -30,7 +30,7 @@ function Section3() {
             <circle cx="16" cy="9" r="2.9" />
             <circle cx="6" cy="5" r="3" />
           </svg>
-          <h1 className='text-xl font-bold mt-6' >Donate Money</h1>
+          <h1 className='text-xl font-bold mt-6 text-black' >Donate Money</h1>
           <p className='text-gray-600 mt-2' >
             Your small help can change someone else’s life and make them happy.
             You'll add a good deed to your cart.

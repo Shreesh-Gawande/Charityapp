@@ -5,8 +5,8 @@ function Section2() {
   return (
     <div className='mt-32 w-full'>
       <div className='flex flex-col items-center justify-center w-full gap-4'>
-        <h1 className='text-4xl font-bold' >Urgent Causes</h1>
-        <p className='text-xl text-center'>Supporting urgent causes, changing lives.</p>
+        <h1 className='text-4xl font-bold text-black' >Urgent Causes</h1>
+        <p className='text-xl text-center text-black'>Supporting urgent causes, changing lives.</p>
       </div>
       <div className='flex justify-center w-full'>
         <div className='flex flex-col sm:flex-row w-full max-w-[1024px] justify-between gap-8 mt-8 px-4'>
