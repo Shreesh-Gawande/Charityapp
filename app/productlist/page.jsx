@@ -8,7 +8,7 @@ function Page() {
 
   useEffect(() => {
     
-    fetch('https://dummyjson.com/products')
+    fetch('https://dummyjson.com/products/search?q=phone')
       .then(res => res.json())
       .then(data => setProducts(data.products))
       .catch(error => console.error('Error fetching products:', error));
@@ -17,12 +17,12 @@ function Page() {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      <div className="grid grid-cols-1 gap-6 p-6">
        
         {products.map(product => (
           <Product 
             key={product.id}
-            image={product.thumbnail}
+            id={product.id}
             title={product.title}
             description={product.description}
             category={product.category}
