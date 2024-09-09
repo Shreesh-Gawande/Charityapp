@@ -35,7 +35,7 @@ function Header() {
         {menuOpen ? (
           <XIcon className="w-8 h-8 text-black" onClick={toggleMenu} />
         ) : (
-          <MenuIcon className="w-8 h-8" onClick={toggleMenu} />
+          <MenuIcon className=" text-black w-8 h-8" onClick={toggleMenu} />
         )}
       </div>
 
