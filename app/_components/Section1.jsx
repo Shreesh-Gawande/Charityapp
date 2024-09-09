@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Section1() {
   return (
-    <div className='bg-[#399866] w-full max-w-[1024px] h-48 mt-32 mx-auto rounded-3xl'>
-      <div className="flex justify-evenly items-center h-full mt-4"> 
+    <div className='bg-[#399866] w-full max-w-[1024px] h-auto mt-32 mx-auto rounded-3xl p-4'>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-evenly items-center h-full mt-4">
         
         <div className='flex flex-col items-center'>
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f8f7f7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-house-plus">
@@ -13,7 +13,7 @@ function Section1() {
             <path d="M18 3v6" />
           </svg>
           <h1 className='text-3xl font-bold p-4' style={{ color: '#FDC137' }}>563</h1>
-          <p className='text-white' >Project Completed</p>
+          <p className='text-white'>Project Completed</p>
         </div>
 
         <div className='flex flex-col items-center'>
@@ -24,7 +24,7 @@ function Section1() {
             <path d="M15 18l-2-2"/>
           </svg>
           <h1 className='text-3xl font-bold p-4' style={{ color: '#FDC137' }}>425</h1>
-          <p className='text-white' >Trusted Partner</p>
+          <p className='text-white'>Trusted Partner</p>
         </div>
 
         <div className='flex flex-col items-center'>
@@ -36,7 +36,7 @@ function Section1() {
             <circle cx="6" cy="5" r="3"/>
           </svg>
           <h1 className='text-3xl font-bold p-4' style={{ color: '#FDC137' }}>978</h1>
-          <p className='text-white' >Money Donated</p>
+          <p className='text-white'>Money Donated</p>
         </div>
 
         <div className='flex flex-col items-center'>
@@ -47,8 +47,9 @@ function Section1() {
             <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"/>
           </svg>
           <h1 className='text-3xl font-bold p-4' style={{ color: '#FDC137' }}>32</h1>
-          <p className='text-white' >Active Volunteer</p>
+          <p className='text-white'>Active Volunteer</p>
         </div>
+        
       </div>
     </div>
   );

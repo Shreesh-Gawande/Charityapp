@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="flex justify-between items-center p-6 md:px-20 bg-[#F8F6E4]">
       
-      <Image src="/logo.png" alt="logo" width={75} height={75} />
+      <Image src="/logo.png" alt="logo" width={75} height={75} className='z-100' />
 
      
       <div className="hidden md:flex gap-7">
@@ -41,7 +41,7 @@ function Header() {
 
       
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#F8F6E4] flex flex-col items-center gap-4 py-4">
+        <div className="absolute top-16 left-0 w-full bg-[#F8F6E4] flex flex-col items-center gap-4 py-4 z-50">
           <Link href="/" onClick={toggleMenu}>Home</Link>
           <Link href="/" onClick={toggleMenu}>About Us</Link>
           <Link href="/" onClick={toggleMenu}>Contact Us</Link>
