@@ -33,7 +33,7 @@ function Header() {
      
       <div className="md:hidden">
         {menuOpen ? (
-          <XIcon className="w-8 h-8" onClick={toggleMenu} />
+          <XIcon className="w-8 h-8 text-black" onClick={toggleMenu} />
         ) : (
           <MenuIcon className="w-8 h-8" onClick={toggleMenu} />
         )}
@@ -41,7 +41,7 @@ function Header() {
 
       
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#F8F6E4] flex flex-col items-center gap-4 py-4 z-50">
+        <div className="absolute top-16 left-0 w-full text-black bg-[#F8F6E4] flex flex-col items-center gap-4 py-4 z-50">
           <Link href="/" onClick={toggleMenu}>Home</Link>
           <Link href="/" onClick={toggleMenu}>About Us</Link>
           <Link href="/" onClick={toggleMenu}>Contact Us</Link>
